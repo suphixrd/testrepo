@@ -1,0 +1,29 @@
+[project]
+name = "spacex"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "dash>=4.5.1",
+    "folium>=1.0.0",
+    "ipykernel>=7.4.0",
+    "ipython-sql>=0.5.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "pandas>=3.1.1",
+    "prettytable<3.10",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "sqlalchemy>=2.1.9",
+    "wget>=3.2",
+]
+
+[project.scripts]
+spacex = "spacex:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
